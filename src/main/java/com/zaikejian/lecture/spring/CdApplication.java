@@ -1,4 +1,4 @@
-package com.zaikejian.lecture.spring_bean;
+package com.zaikejian.lecture.spring;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
