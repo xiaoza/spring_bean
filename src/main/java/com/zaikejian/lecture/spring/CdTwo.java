@@ -7,9 +7,9 @@ import org.springframework.stereotype.Component;
  * Created by xiaoz on 2017/2/13.
  */
 @Component
-@Profile("dev")
-public class CdOne implements CompactDisc {
+@Profile("prod")
+public class CdTwo implements CompactDisc {
 	public void sing() {
-		System.out.println("cd 1 is singing");
+		System.out.println("cd 2 is singing");
 	}
 }
