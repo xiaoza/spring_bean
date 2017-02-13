@@ -1,13 +1,21 @@
 package com.zaikejian.lecture.spring_bean;
 
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
  * Created by xiaoz on 2017/2/13.
  */
 @Configuration
-@ComponentScan
 public class CdConfig {
 
+	@Bean
+	public MediaPlayer cdPlayer(CompactDisc cd) {
+		return new CdPlayer(cd);
+	}
+
+	@Bean
+	public CompactDisc cd() {
+		return new CdOne();
+	}
 }
