@@ -13,7 +13,7 @@ public class CdPlayer implements MediaPlayer {
 	private CompactDisc cd;
 
 	@Autowired
-	@Qualifier("cdOne")
+	@Qualifier("one")
 	public void setCd(CompactDisc cd) {
 		this.cd = cd;
 	}
